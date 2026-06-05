@@ -18,6 +18,8 @@ data class RegisterRequest(
 data class LoginResponse(
     val id: String,
     val email: String,
+
+
     @SerializedName("full_name") val fullName: String,
     val role: String,
     @SerializedName("kyc_verified") val kycVerified: Boolean = false,
